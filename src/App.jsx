@@ -12,22 +12,34 @@ import Background2 from './Components/AnimationBackground2';
 
 const trackList = [
   {
-    name: 'Fly Me to The Moon',
-    artist: 'Frank Sinatra',
-    image: '/Image/Frank_Sinatra.jpg', // Path relative to public folder
-    path: '/Audio/FlyMeToTheMoon_FrankSinatra.m4a' // Path relative to public folder
+    name: 'Arcade',
+    artist: 'Red Skies',
+    image: '/Image/0ddf19a5fbfd5d8c0781fec682804ef6_3712603487144567485.jpg', // Path relative to public folder
+    path: '/Audio/Arcade by Red Skies.mp3' // Path relative to public folder
   },
   {
-    name: 'My Way',
-    artist: 'Frank Sinatra',
+    name: 'Inside You',
+    artist: 'lemonmusicstudio',
+    image: '/Image/En-Nah_Stroll_Sticker_Pack_1_Relaxed.png',
+    path: '/Audio/Inside You by lemonmusicstidio.mp3'
+  },
+  {
+    name: 'LoFi by BoDleasons',
+    artist: 'BoDleasons',
+    image: '/Image/Sticker_Set_1_Anby_doubt.png',
+    path: '/Audio/LoFi by BoDleasons.mp3'
+  },
+  {
+    name: 'The Best Jazz Club in New Orleans',
+    artist: 'BoDleasons',
     image: '/Image/Frank_Sinatra.jpg',
-    path: '/Audio/MyWay_FrankSinatra.m4a'
+    path: '/Audio/The Best Jazz Club in New Orleans Paolo Argento.mp3'
   },
   {
-    name: 'Raindrops Keep Faling on My Head',
-    artist: 'B.J. Thomas',
-    image: '/Image/BJ_Thomas.jpg',
-    path: '/Audio/RaindropsKeepFallinOnMyHead_BJThomas.m4a'
+    name: 'Tokyo Cafe',
+    artist: 'Tokyo Cafe TVARI',
+    image: '/Image/District_Lumina_Square_Icon.png',
+    path: '/Audio/Tokyo Cafe TVARI.mp3'
   }
 ];
 
@@ -226,7 +238,7 @@ function App() {
   {/* For spinning Image */ }
   const spinDisc = isPlaying ? 'animate-disc-spin outline-solid outline-8 outline-[#f1da00]' : 'outline-solid outline-1 outline-white';
   {/* For Tracklist */ }
-  const collapsibleDiv = collapsible ? 'relative block box-content flex overflow-y-auto h-10 lg:h-20 opacity-100 mb-2 rounded-b-xl' : 'overflow-hidden opacity-0 h-0 pointer-events-none';
+  const collapsibleDiv = collapsible ? 'relative block box-content flex overflow-y-auto h-10 lg:h-20 xl:h-40 opacity-100 mb-2 rounded-b-xl' : 'overflow-hidden opacity-0 h-0 pointer-events-none';
 
   return (
     <>
@@ -253,7 +265,7 @@ function App() {
           {/* Title */}
           <div className="text-[clamp(1.25rem,0.5vw+1rem,1.875rem)] w-full backdrop-blur-md rounded-4xl px-4 hover:scale-125 transition-transform duration-200 ease-in-out">
             <h1
-              className="mb-0 mt-0 md:mb-2 lg:mt-2 text-2xl lg:text-4xl font-bold underline hover:cursor-pointer hover:text-red-400 ">
+              className="mb-0 mt-0 md:mb-2 lg:mt-2 text-2xl lg:text-4xl font-bold underline hover:cursor-pointer text-[#f1da00] hover:text-red-400 transition-all ease-in-out">
               Music Player (React)
             </h1>
           </div>
@@ -266,7 +278,7 @@ function App() {
                 Playing {trackIndex + 1} of {trackList.length}
               </div>
               <div
-                className={`track-art group flex cursor-pointer w-[35vw] h-[35vw] md:w-[32vw] md:h-[32vw] rounded-full bg-center bg-cover transition-all duration-500 my-5  shadow-2xl items-center justify-center ${spinDisc} ${isTrackArtVisible ? 'opacity-100' : 'opacity-0'}`} // Dynamic opacity
+                className={`track-art group backdrop-blur-sm flex cursor-pointer w-[35vw] h-[35vw] md:w-[32vw] md:h-[32vw] rounded-full bg-center bg-cover transition-all duration-500 my-5 shadow-2xl items-center justify-center ${spinDisc} ${isTrackArtVisible ? 'opacity-100' : 'opacity-0'}`} // Dynamic opacity
                 style={{ backgroundImage: `url('${currentTrackData.image}')` }} // Set background image via style
                 key={currentTrackData.path || trackIndex}
               >

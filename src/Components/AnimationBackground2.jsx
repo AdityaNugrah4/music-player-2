@@ -5,7 +5,7 @@ import { LuVideotape } from "react-icons/lu"
 
 function Background2() {
     return (
-        <div className='carousel hidden md:block rotate-30 overflow-hidden fixed md:text-[20vw] md:right-40 xl:right-270 outline-solid pointer-events-none bg-white text-[#2e2e32]'>
+        <div className='carousel hidden md:block rotate-30 overflow-hidden fixed md:text-[20vw] md:right-40 xl:right-270 outline-solid outline-4 outline-offset-4 outline-white pointer-events-none bg-white text-[#232323]'>
             <div className='group animate-carousel-up'>
                 <div className="-mt-11 -mb-11 "><BsHeadphones /></div>
                 <div className="-mt-11 -mb-11 "><FaRecordVinyl /></div>
