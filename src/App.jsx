@@ -14,8 +14,8 @@ const trackList = [
   {
     name: 'Arcade',
     artist: 'Red Skies',
-    image: '/Image/0ddf19a5fbfd5d8c0781fec682804ef6_3712603487144567485.jpg', // Path relative to public folder
-    path: '/Audio/Arcade-by-Red-Skies.mp3' // Path relative to public folder
+    image: 'Image/0ddf19a5fbfd5d8c0781fec682804ef6_3712603487144567485.jpg', // Path relative to public folder
+    path: 'Audio/Arcade-by-Red-Skies.mp3' // Path relative to public folder
   },
   {
     name: 'Inside You',
