@@ -15,31 +15,31 @@ const trackList = [
     name: 'Arcade',
     artist: 'Red Skies',
     image: '/Image/0ddf19a5fbfd5d8c0781fec682804ef6_3712603487144567485.jpg', // Path relative to public folder
-    path: '/Audio/Arcade by Red Skies.mp3' // Path relative to public folder
+    path: '/Audio/Arcade-by-Red-Skies.mp3' // Path relative to public folder
   },
   {
     name: 'Inside You',
     artist: 'lemonmusicstudio',
     image: '/Image/En-Nah_Stroll_Sticker_Pack_1_Relaxed.png',
-    path: '/Audio/Inside You by lemonmusicstidio.mp3'
+    path: '/Audio/Inside-You-by-lemonmusicstidio.mp3'
   },
   {
     name: 'LoFi by BoDleasons',
     artist: 'BoDleasons',
     image: '/Image/Sticker_Set_1_Anby_doubt.png',
-    path: '/Audio/LoFi by BoDleasons.mp3'
+    path: '/Audio/LoFi-by-BoDleasons.mp3'
   },
   {
     name: 'The Best Jazz Club in New Orleans',
     artist: 'BoDleasons',
     image: '/Image/Frank_Sinatra.jpg',
-    path: '/Audio/The Best Jazz Club in New Orleans Paolo Argento.mp3'
+    path: '/Audio/The-Best-Jazz-Club-in-New-Orleans-Paolo-Argento.mp3'
   },
   {
     name: 'Tokyo Cafe',
     artist: 'Tokyo Cafe TVARI',
     image: '/Image/District_Lumina_Square_Icon.png',
-    path: '/Audio/Tokyo Cafe TVARI.mp3'
+    path: '/Audio/Tokyo-Cafe-TVARI.mp3'
   }
 ];
 
