@@ -209,7 +209,8 @@ function App() {
   const spinDisc = isPlaying ? 'animate-disc-spin outline-solid outline-8 outline-[#f1da00]' : 'outline-solid outline-1 outline-white';
   /* For Tracklist */
   const collapsibleDiv = collapsible ? 'relative block box-content flex overflow-y-auto h-10 lg:h-20 xl:h-40 opacity-100 mb-2 rounded-b-xl' : 'overflow-hidden opacity-0 h-0 pointer-events-none';
-
+  console.log('track image URL is:', currentTrackData.image);
+  
   return (
     <>
       <div className="flex overflow-hidden flex-col min-h-screen w-full justify-center items-center text-center m-0 p-0 overflow-x-hidden text-white bg-[#2e2e32]">
