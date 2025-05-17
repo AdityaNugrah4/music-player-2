@@ -9,39 +9,10 @@ import { LuVideotape } from "react-icons/lu";
 import './App.css'
 import Background1 from './Components/AnimationBackground1';
 import Background2 from './Components/AnimationBackground2';
+import Arcade from './assets/Audio/Arcade-by-Red-Skies.mp3';
+import { trackList } from './Components/trackList.js';
 
-const trackList = [
-  {
-    name: 'Arcade',
-    artist: 'Red Skies',
-    image: '/Image/0ddf19a5fbfd5d8c0781fec682804ef6_3712603487144567485.jpg', // Path relative to public folder
-    path: '/Audio/Arcade-by-Red-Skies.mp3' // Path relative to public folder
-  },
-  {
-    name: 'Inside You',
-    artist: 'lemonmusicstudio',
-    image: '/Image/En-Nah_Stroll_Sticker_Pack_1_Relaxed.png',
-    path: '/Audio/Inside-You-by-lemonmusicstidio.mp3'
-  },
-  {
-    name: 'LoFi by BoDleasons',
-    artist: 'BoDleasons',
-    image: '/Image/Sticker_Set_1_Anby_doubt.png',
-    path: '/Audio/LoFi-by-BoDleasons.mp3'
-  },
-  {
-    name: 'The Best Jazz Club in New Orleans',
-    artist: 'BoDleasons',
-    image: '/Image/Frank_Sinatra.jpg',
-    path: '/Audio/The-Best-Jazz-Club-in-New-Orleans-Paolo-Argento.mp3'
-  },
-  {
-    name: 'Tokyo Cafe',
-    artist: 'Tokyo Cafe TVARI',
-    image: '/Image/District_Lumina_Square_Icon.png',
-    path: '/Audio/Tokyo-Cafe-TVARI.mp3'
-  }
-];
+
 
 function App() {
   // --- State Variables ---
@@ -253,17 +224,19 @@ function App() {
         // src is set in loadTrack/useEffect
         ></audio>
 
+        {/* Background */}
         <div className='fixed h-full w-[400%]  animate-move-right'>
           <div className='w-[400%] h-full bg-[#2e2e32] opacity-100 bg-[linear-gradient(#232323_1.3px,transparent_1.3px),linear-gradient(to_right,#232323_1.3px,#2e2e32_1.3px)] bg-[length:26px_26px]'></div>
         </div>
 
+        {/* Moving strip background */}
         <Background1 />
         <Background2 />
 
         <div className='bg-[linear-gradient(225deg,#2e2e32_0%,rgba(46,46,50,0)_50%)] from-transparent to-[#2e2e32] absolute h-full w-full'></div>
         <div className='z-100 lg:top-0 lg:mb-4'>
           {/* Title */}
-          <div className="text-[clamp(1.25rem,0.5vw+1rem,1.875rem)] w-full backdrop-blur-md rounded-4xl px-4 hover:scale-125 transition-transform duration-200 ease-in-out">
+          <div className="flex text-[clamp(1.25rem,0.5vw+1rem,1.875rem)] backdrop-blur-md rounded-4xl px-4 hover:scale-125 transition-transform duration-200 ease-in-out">
             <h1
               className="mb-0 mt-0 md:mb-2 lg:mt-2 text-2xl lg:text-4xl font-bold underline hover:cursor-pointer text-[#f1da00] hover:text-red-400 transition-all ease-in-out">
               Music Player (React)
