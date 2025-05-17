@@ -9,7 +9,6 @@ import { LuVideotape } from "react-icons/lu";
 import './App.css'
 import Background1 from './Components/AnimationBackground1';
 import Background2 from './Components/AnimationBackground2';
-import Arcade from './assets/Audio/Arcade-by-Red-Skies.mp3';
 import { trackList } from './Components/trackList.js';
 
 
