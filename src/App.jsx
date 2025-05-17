@@ -13,8 +13,8 @@ import Arcade from './assets/Audio/Arcade-by-Red-Skies.mp3';
 import { trackList } from './Components/trackList.js';
 
 
-
-function App() {
+a53075dfe7e1f9
+{
   // --- State Variables ---
   const [trackIndex, setTrackIndex] = useState(0);
   const [isPlaying, setIsPlaying] = useState(false);
