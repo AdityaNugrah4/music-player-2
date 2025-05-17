@@ -13,8 +13,7 @@ import Arcade from './assets/Audio/Arcade-by-Red-Skies.mp3';
 import { trackList } from './Components/trackList.js';
 
 
-a53075dfe7e1f9
-{
+function App() {
   // --- State Variables ---
   const [trackIndex, setTrackIndex] = useState(0);
   const [isPlaying, setIsPlaying] = useState(false);
@@ -191,7 +190,7 @@ a53075dfe7e1f9
     nextTrack();
   }, [nextTrack]);
 
-  {/* For handling tracklist */ }
+  /* For handling tracklist */
   const handleSelectTrack = (selectedIndex) => {
     console.log(`Track selected from list: ${trackList[selectedIndex].name}`);
     if (selectedIndex === trackIndex) {
@@ -206,9 +205,9 @@ a53075dfe7e1f9
     }
   }
 
-  {/* For spinning Image */ }
+  /* For spinning Image */
   const spinDisc = isPlaying ? 'animate-disc-spin outline-solid outline-8 outline-[#f1da00]' : 'outline-solid outline-1 outline-white';
-  {/* For Tracklist */ }
+  /* For Tracklist */
   const collapsibleDiv = collapsible ? 'relative block box-content flex overflow-y-auto h-10 lg:h-20 xl:h-40 opacity-100 mb-2 rounded-b-xl' : 'overflow-hidden opacity-0 h-0 pointer-events-none';
 
   return (
@@ -224,12 +223,10 @@ a53075dfe7e1f9
         // src is set in loadTrack/useEffect
         ></audio>
 
-        {/* Background */}
         <div className='fixed h-full w-[400%]  animate-move-right'>
           <div className='w-[400%] h-full bg-[#2e2e32] opacity-100 bg-[linear-gradient(#232323_1.3px,transparent_1.3px),linear-gradient(to_right,#232323_1.3px,#2e2e32_1.3px)] bg-[length:26px_26px]'></div>
         </div>
 
-        {/* Moving strip background */}
         <Background1 />
         <Background2 />
 
@@ -252,7 +249,7 @@ a53075dfe7e1f9
               </div>
               <div
                 className={`track-art group backdrop-blur-sm flex cursor-pointer w-[35vw] h-[35vw] md:w-[32vw] md:h-[32vw] rounded-full bg-center bg-cover transition-all duration-500 my-5 shadow-2xl items-center justify-center ${spinDisc} ${isTrackArtVisible ? 'opacity-100' : 'opacity-0'}`} // Dynamic opacity
-                style={{ backgroundImage: `url('${currentTrackData.image}')` }} // Set background image via style
+                style={{ backgroundImage: `url(${currentTrackData.image})` }} // Set background image via style
                 key={currentTrackData.path || trackIndex}
               >
                 {isPlaying
