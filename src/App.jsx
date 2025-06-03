@@ -249,7 +249,8 @@ function App() {
               </div>
               <div
                 className={`track-art group backdrop-blur-sm flex cursor-pointer w-[35vw] h-[35vw] md:w-[32vw] md:h-[32vw] rounded-full bg-center bg-cover transition-all duration-500 my-5 shadow-2xl items-center justify-center ${spinDisc} ${isTrackArtVisible ? 'opacity-100' : 'opacity-0'}`} // Dynamic opacity
-                style={{ backgroundImage: `url(${currentTrackData.image})` }} // Set background image via style
+                style={{ backgroundImage: `url(${currentTrackData.image})` }}
+                loading="lazy" // Set background image via style
                 key={currentTrackData.path || trackIndex}
               >
                 {isPlaying
