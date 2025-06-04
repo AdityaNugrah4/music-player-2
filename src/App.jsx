@@ -264,7 +264,9 @@ function App() {
               </div>
             </div>
           </div>
-          <div className='bg-transparent pt-1 backdrop-blur-md outline-solid outline-[#2e2e32] border-solid border-gray-500 outline-8 rounded-xl items-center justify-items-center'>
+
+          {/* Box Area */}
+          <div className='flex flex-col bg-transparent pt-1 backdrop-blur-md outline-solid outline-[#2e2e32] border-solid border-gray-500 outline-8 rounded-xl items-center justify-items-center'>
 
             {/* Details Area */}
             <div className="box-content flex border border-gray-400 bg-[#232323] outline-solid outline-black outline-4 justify-center track-name text-[clamp(1rem,5vw,2.5rem)] font-bold backdrop-blur-sm py-1 lg:mt-6 px-1 md:px-4 md:mx-4 rounded-2xl">
